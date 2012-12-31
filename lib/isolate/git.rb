@@ -4,6 +4,8 @@ require 'fileutils'
 module Isolate
   class Git
 
+    VERSION = '0.1.0'
+
     def self.setup entry
       new(entry).setup
     end
