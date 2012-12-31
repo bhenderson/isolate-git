@@ -1,8 +1,7 @@
 .autotest
+.gitignore
 History.txt
 Manifest.txt
 README.txt
 Rakefile
-bin/isolate/git
 lib/isolate/git.rb
-test/test_isolate/git.rb
