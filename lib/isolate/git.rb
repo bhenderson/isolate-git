@@ -43,12 +43,11 @@ module Isolate
       src = @entry.options[:git]
       name = @entry.name
 
-      if sh 'git','clone', src, name
-        name
-      else
+      unless sh 'git','clone', src, name
         log "unable to clone #{src}"
-        false
       end
+
+      name if File.directory? name
     end
 
     def git?
