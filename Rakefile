@@ -8,8 +8,6 @@ Hoe.plugin :minitest
 
 Hoe.spec 'isolate-git' do
   developer 'Brian Henderson', 'henderson.bj@gmail.com'
-
-  dependency "isolate", "~> 3.2.2"
 end
 
 $:.unshift 'lib'
